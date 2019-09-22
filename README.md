@@ -19,11 +19,13 @@ Run the below command to create a setup stack at the project root level
 $ sh run-setup.sh
 ```
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Tables        | Are           |
+| ------------- |:-------------:|
+| ArtifactBucket      | AWS::S3::Bucket | 
+| SourceBucket      | AWS::S3::Bucket | 
+| CloudformationLambdaTrustRole      | AWS::IAM::Role      |
+| CodeBuild | AWS::CodeBuild::Project      |
+| CodeBuildRole | AWS::IAM::Role      |
 
 Below resources are created
 * ArtifactBucket 					AWS::S3::Bucket
