@@ -33,6 +33,19 @@ SourceBucket and ArtifactBucket
 
 Now that all the resources are in place (created by the setup stack), lets use them to create a Codepipeline that will deploy a lambda and an API Gateway in front of it
 
+
+### Pipeline Configuration
+Configure the pipeline settings and choose Next.
+
+* Pipeline name – workshop-pipeline
+* Service role – New service role
+* Artifact store – Custom location and fill in the 'Bucket' field with <ArtifactBucket> (created in setup stack)
+
+## Upload code to the SourceBucket (copied from setup stack output)
+```bash
+sh upload-code-to-s3.sh <SourceBucket>
+```
+
 ## Cleanup
 
 To delete the sample application and the bucket that you created, use the AWS CLI.
