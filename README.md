@@ -38,8 +38,7 @@ Now that all the resources are in place (created by the setup stack), lets use t
 To delete the sample application and the bucket that you created, use the AWS CLI.
 
 ```bash
-sam-app$ aws cloudformation delete-stack --stack-name sam-app
-sam-app$ aws s3 rb s3://BUCKET_NAME
+sh delete-setup.sh
 ```
 
 ## Resources
