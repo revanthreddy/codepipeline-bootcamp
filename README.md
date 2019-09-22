@@ -41,29 +41,30 @@ Now that all the resources are in place (created by the setup stack), lets use t
 * Artifact store – Custom location and fill in the 'Bucket' field with ArtifactBucket (created in setup stack)
 
 ### Source provider – S3
-
-* Bucket  – SourceBucket
-* S3 object key – app.zip
-* Change detection options – Amazon CloudWatch Events
+```
+Bucket  – SourceBucket
+S3 object key – app.zip
+Change detection options – Amazon CloudWatch Events
+```
 
 ### Configure build project settings and choose Continue to CodePipeline
-
-* Project Name - workshop-build (created as part of the stack)
-
+```
+Project Name - workshop-build (created as part of the stack)
+```
 ### Configure deploy stage settings and choose Next
-
-* Deploy Provider - AWS Cloudformation
-* Action mode - Create or update a stack
-* Stack name - app-stack
-* Template section 
+```
+Deploy Provider - AWS Cloudformation
+Action mode - Create or update a stack
+Stack name - app-stack
+Template section 
     - Artifact Name - BuildArtifact
     - File name - package.yml
-* Role name - <workshop-setup-CloudformationLambdaTrustRole-XXXXXXXXX
-
+Role name - <workshop-setup-CloudformationLambdaTrustRole-XXXXXXXXX
+```
 ### Create Pipeline
-
-* Review all the changes and click "Create Pipeline"
-
+```
+Review all the changes and click "Create Pipeline"
+```
 
 ## Upload code to the SourceBucket (copied from setup stack output)
 ```bash
