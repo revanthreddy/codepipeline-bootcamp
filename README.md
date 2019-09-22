@@ -19,7 +19,7 @@ Run the below command to create a setup stack at the project root level
 $ sh run-setup.sh
 ```
 
-| Tables        | Are           |
+| Logical ID's        | Resource Type           |
 | ------------- |:-------------:|
 | ArtifactBucket      | AWS::S3::Bucket | 
 | SourceBucket      | AWS::S3::Bucket | 
