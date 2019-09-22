@@ -66,7 +66,11 @@ Role name - <workshop-setup-CloudformationLambdaTrustRole-XXXXXXXXX
 Review all the changes and click "Create Pipeline"
 ```
 
+
+
 ## Upload code to the SourceBucket (copied from setup stack output)
+
+Now that the pipeline is ready
 ```bash
 sh upload-code-to-s3.sh <SourceBucket>
 ```
@@ -75,6 +79,10 @@ sh upload-code-to-s3.sh <SourceBucket>
 
 To delete the sample application and the bucket that you created, use the AWS CLI.
 
+* Delete the "workshop-stack" first 
+* Empty the SourceBucket and ArtifactBucket manually
+
+Then run the below
 ```bash
 sh delete-setup.sh
 ```
