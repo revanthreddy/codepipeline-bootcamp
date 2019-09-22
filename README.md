@@ -1,6 +1,6 @@
 # Codepipeline Workshop
 
-This project contains source code and supporting files to do a workshop on Codepipeline
+This project contains source code and supporting files to do a workshop on Codepipeline.
 The application uses several AWS resources, including Lambda functions and an API Gateway API. These resources are defined in the `template.yml` file in this project. You can update the template to add AWS resources through the same deployment process that updates your application code.
 
 
@@ -73,10 +73,18 @@ Review all the changes and click "Create Pipeline"
 
 ## Upload code to the SourceBucket (copied from setup stack output)
 
-Now that the pipeline is ready
+Now that the pipeline is ready to be used we will upload our SAM template to the SourceBucket
 ```bash
 sh upload-code-to-s3.sh <SourceBucket>
 ```
+
+Once the object (app.zip) is uploaded, go the Codepipeline console and follow the 
+progress. The last stage is the deploy stage where the cloudformation stack is created/updated.
+
+
+Now Go to CloudFormation console to look at the stack creation process. As the stack creation is complete
+click on the Outputs section and retrieve the URL of the deployed application.
+
 
 ## Cleanup
 
