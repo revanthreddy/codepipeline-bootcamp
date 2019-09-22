@@ -19,6 +19,7 @@ Run the below command to create a setup stack at the project root level
 $ sh run-setup.sh
 ```
 
+### Below resources are created
 | Logical ID's        | Resource Type           |
 | ------------- |:-------------:|
 | ArtifactBucket      | AWS::S3::Bucket | 
@@ -27,12 +28,6 @@ $ sh run-setup.sh
 | CodeBuild | AWS::CodeBuild::Project      |
 | CodeBuildRole | AWS::IAM::Role      |
 
-Below resources are created
-* ArtifactBucket 					AWS::S3::Bucket
-* CloudformationLambdaTrustRole 	AWS::IAM::Role	
-* CodeBuild						    AWS::CodeBuild::Project
-* CodeBuildRole 					AWS::IAM::Role
-* SourceBucket  					AWS::S3::Bucket
 
 From your cloudformation console, look at the outputs section of workshop-setup and note down the 
 SourceBucket and ArtifactBucket
