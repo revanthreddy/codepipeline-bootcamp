@@ -38,11 +38,11 @@ Now that all the resources are in place (created by the setup stack), lets use t
 
 * Pipeline name – workshop-pipeline
 * Service role – New service role
-* Artifact store – Custom location and fill in the 'Bucket' field with <ArtifactBucket> (created in setup stack)
+* Artifact store – Custom location and fill in the 'Bucket' field with ArtifactBucket (created in setup stack)
 
 ### Source provider – S3
 
-* Bucket  – <SourceBucket>
+* Bucket  – SourceBucket
 * S3 object key – app.zip
 * Change detection options – Amazon CloudWatch Events
 
