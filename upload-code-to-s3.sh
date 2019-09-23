@@ -11,7 +11,7 @@ zip_name=app.zip
 
 cd app
 
-zip -r $zip_name ./app -x *.git*
+zip -r $zip_name . -x *.git*
 aws s3 cp $zip_name s3://$source_artifact_bucket_name
 rm $zip_name
 
