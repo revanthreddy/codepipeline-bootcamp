@@ -63,6 +63,7 @@ Template section
     - Artifact Name - BuildArtifact
     - File name - package.yml
 Role name - <workshop-setup-CloudformationLambdaTrustRole-XXXXXXXXX
+Capabilities – CAPABILITY_IAM , CAPABILITY_AUTO_EXPAND
 ```
 ### Create Pipeline
 ```
