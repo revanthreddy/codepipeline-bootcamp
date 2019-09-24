@@ -87,6 +87,11 @@ Now Go to CloudFormation console to look at the stack creation process. As the s
 click on the Outputs section and retrieve the URL of the deployed application.
 
 
+## Challenges
+
+* Add an approval stage before the deploy stage and make a simple code change
+* Add another action 
+
 ## Cleanup
 
 To delete the sample application and the bucket that you created, use the AWS CLI.
@@ -94,10 +99,12 @@ To delete the sample application and the bucket that you created, use the AWS CL
 * Delete the "workshop-stack" first 
 * Empty the SourceBucket and ArtifactBucket manually
 
-Then run the below
+* Then run the below
 ```bash
 sh delete-setup.sh
 ```
+
+* Delete the pipeline from the Codepipeline console
 
 ## Resources
 
