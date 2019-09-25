@@ -30,7 +30,7 @@ $ sh run-setup.sh
 
 
 From your cloudformation console, look at the outputs section of workshop-setup and note down the 
-SourceBucket and ArtifactBucket
+**SourceBucket** and **ArtifactBucket**
 
 ## Start the Codepipeline setup
 
@@ -41,7 +41,7 @@ Now that all the resources are in place (created by the setup stack), lets use t
 
 * Pipeline name – workshop-pipeline
 * Service role – New service role
-* Artifact store – Custom location and fill in the 'Bucket' field with ArtifactBucket (created in setup stack)
+* Artifact store – Custom location and fill in the 'Bucket' field with **ArtifactBucket** (created in setup stack)
 
 ### Source provider – S3
 ```
@@ -100,8 +100,8 @@ sh upload-code-to-s3.sh <SourceBucket>
 
 To delete the sample application and the bucket that you created, use the AWS CLI.
 
-* Delete the "workshop-stack" first 
-* Empty the SourceBucket and ArtifactBucket manually
+* Delete the **"workshop-stack"** first 
+* Empty the **SourceBucket** and **ArtifactBucket** manually
 
 * Then run the below
 ```bash
