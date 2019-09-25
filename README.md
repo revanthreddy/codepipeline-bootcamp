@@ -89,9 +89,7 @@ click on the Outputs section and retrieve the URL of the deployed application.
 
 ## Challenges
 
-* Add an approval stage before the deploy stage and push code
-* Add another action as part of the build stage and change the runorder (via [cli](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/update-pipeline.html))
-* Change the source from S3 to AWS CodeCommit (stretch goal)
+* Add an approval action in the deploy stage and change the runorder (think [cli](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/update-pipeline.html))
 
 ## Cleanup
 
