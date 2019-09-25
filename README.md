@@ -89,8 +89,9 @@ click on the Outputs section and retrieve the URL of the deployed application.
 
 ## Challenges
 
-* Add an approval stage before the deploy stage and make a simple code change
-* Add another action 
+* Add an approval stage before the deploy stage and push code
+* Add another action as part of the build stage and change the runorder (via [cli](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/update-pipeline.html))
+* Change the source from S3 to AWS CodeCommit (stretch goal)
 
 ## Cleanup
 
@@ -108,6 +109,4 @@ sh delete-setup.sh
 
 ## Resources
 
-See the [AWS SAM developer guide](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html) for an introduction to SAM specification, the SAM CLI, and serverless application concepts.
-
-Next, you can use AWS Serverless Application Repository to deploy ready to use Apps that go beyond hello world samples and learn how authors developed their applications: [AWS Serverless Application Repository main page](https://aws.amazon.com/serverless/serverlessrepo/)
+[AWS CodePipeline CLI](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/index.html)
