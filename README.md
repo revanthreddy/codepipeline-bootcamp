@@ -32,9 +32,9 @@ $ sh run-setup.sh
 From your cloudformation console, look at the outputs section of workshop-setup and note down the 
 **SourceBucket** and **ArtifactBucket**
 
-## Start the Codepipeline setup
+## Start the Codepipeline setup in the AWS console
 
-Now that all the resources are in place (created by the setup stack), lets use them to create a Codepipeline that will deploy a lambda and an API Gateway in front of it
+Now that all the resources are in place (created by the setup stack), lets use them to create a Codepipeline in the console that will deploy an API Gateway which is backed by a lambda function 
 
 
 ### Configure the pipeline settings and choose Next.
