@@ -86,10 +86,15 @@ progress. The last stage is the deploy stage where the cloudformation stack is c
 Now Go to CloudFormation console to look at the stack creation process. As the stack creation is complete
 click on the Outputs section and retrieve the URL of the deployed application.
 
+Make some changes to your code in app/index.js file and re-run the below command and and follow the progress in codepipeline 
+```bash
+sh upload-code-to-s3.sh <SourceBucket>
+```
+
 
 ## Challenges
 
-* Add an approval action in the deploy stage and change the runorder (think [cli](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/update-pipeline.html))
+* Add an approval action in the deploy stage and change the 'runorder' (think [cli](https://docs.aws.amazon.com/cli/latest/reference/codepipeline/update-pipeline.html))
 
 ## Cleanup
 
